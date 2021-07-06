@@ -29,8 +29,8 @@
       <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="<?php echo e(asset ('')); ?>masuk" method="post">
-      <?php echo e(csrf_field()); ?>
-
+      
+      <?php echo csrf_field(); ?>
         <div class="input-group mb-3">
           <input name="txtuser" type="text" class="form-control" placeholder="Username">
           <div class="input-group-append">

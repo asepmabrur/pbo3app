@@ -20,6 +20,7 @@
             {data: 'uname', name: 'uname'},
             {data: 'namalengkap', name: 'namalengkap'},
             {data: 'email', name: 'email'},
+			{data: 'jabatan', name: 'jabatan'},
             {
                     data: null,
                     className: "center",
@@ -51,6 +52,7 @@
                         <th>Username</th>
                         <th>Nama Lengkap</th>
                         <th>Email</th>
+						<th>Jabatan</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -60,6 +62,7 @@
                         <th>Username</th>
                         <th>Nama Lengkap</th>
                         <th>Email</th>
+						<th>Jabatan</th>
                         <th>Action</th>
                     </tr>
                 </tfoot>

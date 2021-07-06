@@ -30,7 +30,22 @@
               <p>Home</p>
             </a>
           </li>
+          @foreach ($data_menu as $category)
           <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>{{ $category->namamenu }}<i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+            
+              <ul class="nav nav-treeview">
+              @foreach ($category->childrenCategories as $childCategory)
+                  @include('layout.child_category', ['child_category' => $childCategory])
+              @endforeach
+              </ul>
+          </li>
+          @endforeach
+          <!-- <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>Administrasi<i class="right fas fa-angle-left"></i>
@@ -50,7 +65,7 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
